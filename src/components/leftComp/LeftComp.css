@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 16px 0;
+    position: sticky;
+    top: 0;
     /* margin: 12px; */
 }
 .left-comp-container .top {
