@@ -1,3 +1,4 @@
+import Gallery from "../gallery/Gallery";
 import "./RightComp.css";
 
 const RightComp = () => {
@@ -18,7 +19,7 @@ const RightComp = () => {
         </div>
       </div>
       <div className="bottom">
-        Full
+        <Gallery />
       </div>
     </div>
   )

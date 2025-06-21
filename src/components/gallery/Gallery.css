@@ -1,0 +1,10 @@
+.gallery {
+    margin-right: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* if required change to 7
+    like : 
+    grid-template-columns: repeat(7, 1fr); -- 
+    */
+    gap: 8px;
+}

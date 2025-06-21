@@ -14,7 +14,7 @@
     align-items: center;
     gap: 16px;
 }
-img {
+.left-comp-container img {
     width: 24px;
     height: 24px;
     object-fit: cover;

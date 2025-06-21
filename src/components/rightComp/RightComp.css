@@ -2,8 +2,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 16px 0;
+    padding: 16px 0px;
     /* margin: 12px; */
 }
 .right-comp-container .top {
@@ -13,7 +12,12 @@
     align-items: center;
     justify-content: space-between;
     gap: 4px;
-    padding: 6px;
+    padding: 6px 0;
+}
+.right-comp-container .input-box img, .right-comp-container .profile img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
 }
 .input-box {
     width: 100%;
@@ -73,10 +77,14 @@
 }
 .right-comp-container .bottom {
     flex: 1;
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between; */
+    gap: 4px;
+    padding: 6px 0;
 }
 .right-comp-container .top a, .right-comp-container .bottom a {
     padding: 14px;
