@@ -1,0 +1,113 @@
+
+.app {
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.app .lc {
+  width: 72px;
+  border-right: 1px solid rgba(128, 128, 128, 0.221);
+}
+.app .rc {
+  flex: 1;
+}
+
+.right-comp-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    /* margin: 12px; */
+}
+.right-comp-container .top {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 6px 0;
+}
+.right-comp-container .input-box img, .right-comp-container .profile img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.input-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: rgba(161, 161, 161, 0.123);
+    border-radius: 16px;
+}
+.input-box:hover {
+    background-color: rgba(139, 139, 139, 0.195);
+}
+.input-box img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    margin: 0 0 0 10px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 6px 6px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+    color: rgb(100, 100, 100);
+}
+.input-box input::placeholder {
+    color: rgb(100, 100, 100);
+}
+
+.top .profile {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.top .profile div {
+    padding: 10px;
+}
+.top .profile img {
+    display: block;
+    object-fit: contain;
+}
+.top .profile div {
+    border-radius: 8px;
+}
+.top .profile div:hover {
+    cursor: pointer;
+    background-color: rgba(240, 240, 240, 0.73);
+}
+.top .profile .avatar-more {
+    width: 12px;
+    height: 12px;
+}
+.right-comp-container .bottom {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; */
+    gap: 4px;
+    padding: 6px 0;
+}
+.right-comp-container .top a, .right-comp-container .bottom a {
+    padding: 14px;
+    border-radius: 8px;
+}
+.right-comp-container .top a img, .right-comp-container .bottom a img  {
+    display: block;
+}
+.right-comp-container .top a:hover, .right-comp-container .bottom a:hover {
+    background-color: rgba(240, 240, 240, 0.73);
+}
