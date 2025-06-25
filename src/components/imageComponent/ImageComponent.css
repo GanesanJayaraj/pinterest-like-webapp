@@ -1,0 +1,21 @@
+
+/* Vignette overlay */
+.main-img::before {
+  /* content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 8px;
+  background: none;
+  opacity: 0;
+  transition: opacity 2s ease; */
+}
+/* Only add vignette when .has-image is present */
+.main-img::before {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.main-img:hover::before {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
+  opacity: 1;
+}

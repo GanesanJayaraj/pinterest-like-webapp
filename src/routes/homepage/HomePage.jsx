@@ -1,8 +1,9 @@
 import React from 'react'
+import Gallery from '../../components/gallery/Gallery'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Gallery />
   )
 }
 

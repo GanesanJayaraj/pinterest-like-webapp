@@ -14,7 +14,9 @@ const MainLayout = () => {
         <div className='rc'>
           <div className='right-comp-container'>
             <RightCompTop />
-            <Outlet />
+            <div style={{padding: "12px 0"}}>
+              <Outlet />
+            </div>
             {/* <RightCompBottom /> */}
           </div>
         </div>

@@ -15,12 +15,14 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainLayout />} />
-        <Route path="/create" element={<CreatePage />} />
-        <Route path="/pin/:id" element={<PostPage />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/create" element={<CreatePage />} />
+          <Route path="/pin/:id" element={<PostPage />} />
+          <Route path="/:id" element={<ProfilePage />} />
+          <Route path="/search" element={<SearchPage />} />
+        </Route>
         <Route path="/auth" element={<AuthPage />} />
-        <Route path="/:" element={<ProfilePage />} />
-        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
